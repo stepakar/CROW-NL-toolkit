@@ -1,4 +1,4 @@
-Multilinguistic (English and Czech as base) NL toolkit for language processing created within CROW project (CIIRC CTU in Prague)
+Multilinguistic (English and Czech as base) NL toolkit for language processing created within CROW project (CIIRC CTU in Prague): [http://imitrob.ciirc.cvut.cz/crow.html](http://imitrob.ciirc.cvut.cz/crow.html).
 
 Balíček je *jazykově agnostický* (jednotlivé funkce mají zvolený jazyk jako parametr a tudíž lze balíček spustit pod jakýmkoli jazykem). Specifikace jednotlivých postupů a šablon pro daný jazyk se připravuje v ````JSON```` souborech. V rámci publikovaného balíčku jsou implementována vzorová data pro angličtinu a češtinu. Tvorba balíčku nástrojů vycházela z předchozího průzkumu jednotlivých nástrojů pro zpracování anglického a českého jazyka.
 
@@ -20,17 +20,17 @@ Pro účely testování obsahuje balíček sadu obecných předpřipravených p�
 
 
 | Funkce | Šablona | Popis akce
-|-----------|---------|----------
-| GlueTask | <NALEP> <TYP> <POZICE> | robot aplikuje lepidlo na danou pozici
-| FetchTask | <UCHOP> <OBJEKT> | robot uchopí zvolený objekt 
-|     PutTask | <POLOŽ> <OBJEKT> <POZICE> | robot položí daný objekt na danou pozici
-| FetchToHandTask | <PODEJ> <MI> <OBJEKT> | robot uchopí objekt a uvolní nad dlaní uživatele 
-StoreTask | <ULOŽ> <OBJEKT> |  robot dá objekt do úložiště robotu (dostupné jen robotu)  
-TidyingTask | <TIDY UP> | robot uklidí z pracoviště objekty mající úložiště (např. nástroje)
-RemoveTask | <ODSTRAŇ> <NEPOTŘEBNÉ> <OBJEKT> | odstranění objektů nepotřebných pro aktuální úlohu 
-InsertTask | <VLOŽ> <OBJEKT> <DO> <OBJEKT> | vsunutí objektu (př. kolíku) do otvoru 
-UplugTask | <VYNDEJ> <OBJEKT> <Z> <OBJEKT> | vysunutí objektu z otvoru 
-StackTask | <POLOŽ> <OBJEKT> <NA> <OBJEKT> | vrstvení objektů 
+|-----------|---------------|----------
+| GlueTask | ````<NALEP> <TYP> <POZICE>```` | robot aplikuje lepidlo na danou pozici
+| FetchTask | ````<UCHOP> <OBJEKT>```` | robot uchopí zvolený objekt 
+|     PutTask | ````<POLOŽ> <OBJEKT> <POZICE>```` | robot položí daný objekt na danou pozici
+| FetchToHandTask | ````<PODEJ> <MI> <OBJEKT>```` | robot uchopí objekt a uvolní nad dlaní uživatele 
+StoreTask | ````<ULOŽ> <OBJEKT>```` |  robot dá objekt do úložiště robotu (dostupné jen robotu)  
+TidyingTask | ````<TIDY UP>```` | robot uklidí z pracoviště objekty mající úložiště (např. nástroje)
+RemoveTask | ````<ODSTRAŇ> <NEPOTŘEBNÉ> <OBJEKT>```` | odstranění objektů nepotřebných pro aktuální úlohu 
+InsertTask | ````<VLOŽ> <OBJEKT> <DO> <OBJEKT>```` | vsunutí objektu (př. kolíku) do otvoru 
+UplugTask | ````<VYNDEJ> <OBJEKT> <Z> <OBJEKT>```` | vysunutí objektu z otvoru 
+StackTask | ````<POLOŽ> <OBJEKT> <NA> <OBJEKT>```` | vrstvení objektů 
 ... | ... | ... 
 
 3. Umožnění rozhodování uživatele o jednotlivých krocích procesu. Balíček umožňuje pro daný stav procesu *generování zadání* pro uživatele a *porovnání odpovědi uživatele* s danou sadou variant. Samotný proces postupu pro danou úlohu je definovaný uživatelem ve formě ````YAML```` souboru, který je následně zpracován pomocí sémantické reprezentace úloh (WP~\ref{sec:WP23}) a uložen ve znalostní bázi (WP~\ref{sec:znalostni_baze}). Pro interakci s uživatelem v daných stavech procesu lze zavolat funkci \texttt{query\_state}:
