@@ -1,0 +1,30 @@
+{
+    "en": {
+        "current_state": "We are currently in state {current_state_text}",
+        "no_audio": "There was no audio from the microphone for more than {timeout} seconds. Make sure that the microphone is turned on, working, and you are speaking into it.",
+        "speech_recognition_result": "Speech Recognition thinks you said '{recog_text_original}'",
+        "selected_state_full": "Selected next state is '{selected_variant}' with ID '{next_state_ID}'",
+        "selected_state": "Selected state is '{selected_variant}'",
+        "unknown_choice": "The recognized option is not valid, please, try again. You can ask to repeat the options.",
+        "did_not_understand": "I did not understand. Please, repeat.",
+        "no_speech": "No speech recognized within the timeout period of {self.LISTENING_START_TIMEOUT} seconds. Please, say your query and make sure the microphone is working.",
+        "which_choice": "Which choice would you like?",
+        "yes_or_no": "",
+        "no_cannot_proceed": "Choosing not to proceed. You can request a repeat of the options. If you would like to continue to the next state, say: Yes, I want to continue.",
+        "makes_no_sense": "I am sorry, your choice makes no sense!"
+    },
+    "cs": {
+        "current_state": "Nyní jsme ve stavu {current_state_text}",
+        "no_audio": "There was no audio from the microphone for more than {timeout} seconds. Make sure that the microphone is turned on, working, and you are speaking into it.",
+        "speech_recognition_result": "Rozpoznávání řeči předpokládá, že jste řekli '{recog_text_original}'",
+        "selected_state_full": "Vybraná varianta je '{selected_variant}' s ID '{next_state_ID}'",
+        "selected_state": "Zvolili jste '{selected_variant}'",
+        "unknown_choice": "Rozpoznaná možnost není platná, prosím, zkuste znovu. Můžete poprosit o zopakování možností.",
+        "did_not_understand": "Nerozumím. Prosím, zopakujte.",
+        "no_speech": "No speech recognized within the timeout period of {self.LISTENING_START_TIMEOUT} seconds. Please, say your query and make sure the microphone is working.",
+        "which_choice": "Jakou možnost si přejete?",
+        "yes_or_no": "",
+        "no_cannot_proceed": "Rozhodli jste se nepokračovat. Můžete poprosit o zopakování možností. Pokud chcete pokračovat do dalšího stavu, řekněte: Ano, chci pokračovat",
+        "makes_no_sense": "Je mi líto, ale vaše volba nedáva smysl!"
+    }
+}

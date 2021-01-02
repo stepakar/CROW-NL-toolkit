@@ -1,0 +1,18 @@
+# name: test
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  # - anaconda
+  - python=3.7
+  - pyaudio
+  - numpy
+  - opcua
+  - python-sounddevice
+  - pip
+  - pip:
+    - nltk
+    - speechrecognition
+    - ufal.morphodita
+    - inputimeout
+    - unidecode

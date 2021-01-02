@@ -77,3 +77,10 @@ Balíček nástrojů je úzce *propojený se znalostní bází (ontologií)*, kd
 
 Balíček je doplněn sadou *unit testů*. 
 
+## HOW TO run and use
+
+To run a trial version:
+1. Follow installation instructions in vr_demo
+2. Follow installation instrucctions in nlp_crow python package
+3. run ````servery.py```` in tests folder
+4. run ````main.py```` in 
