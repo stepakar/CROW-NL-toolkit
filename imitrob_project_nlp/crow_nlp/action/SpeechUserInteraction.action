@@ -1,0 +1,15 @@
+std_msgs/Header header
+string user_msg
+int32 request_type
+
+---
+# SentenceProgram TODO: reuse msg, but there were troubles finding it from the same package
+std_msgs/Header header
+string[] sentences
+
+# state selection
+int32 next_state
+bool done
+---
+int32 state
+string msg
