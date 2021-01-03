@@ -11,7 +11,8 @@
       "object_type": "objects of type ",
       "in_workspace": " in the workspace.",
       "default_option": "selecting default option zero. Change to user input.",
-      "debug_text": "Processing input text: "
+      "debug_text": "Processing input text: ",
+      "state_description": "We are currently in the state "
       },
 "cs":{"start_template":"Rozhodli jste se specifikovat program dle šablon v ontologii.",
       "start_specify": "Prosím, specifikujte svůj požadavek!",
@@ -25,6 +26,7 @@
       "object_type": "objekty typu ",
       "in_workspace": " na pracovišti.",
       "default_option": "Vybrána automatická volba nula. Změň na volbu uživatele.",
-      "debug_text": "Zpracovávám zadaný text:"
+      "debug_text": "Zpracovávám zadaný text:",
+      "state_description": "Nyní jsme ve stavu "
 }
       }
