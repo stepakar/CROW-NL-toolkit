@@ -12,6 +12,7 @@ from playsound import playsound
 from nlp_crow.database.Database import State
 from nlp_crow.database.DatabaseAPI import DatabaseAPI, db
 from nlp_crow.processing.NLProcessor import NLProcessor
+from nlp_crow.modules.UserInputManager import UserInputManager
 from nlp_crow.processing.ProgramRunner import ProgramRunner
 from nlp_crow.utils.files import get_full_path
 
@@ -43,7 +44,8 @@ from pydub.playback import play
 import io
 
 from speech_vr.encoder.MorphCategory import POS
-from speech_vr.encoder.ParsedText import ParsedText, TaggedText, ParseTreeNode, TaggedToken  # noqa
+from speech_vr.encoder.ParsedText import ParsedText, ParseTreeNode  # noqa
+from speech_vr.encoder.TaggedText import TaggedText, TaggedToken
 from speech_vr.encoder.Tag import Tag
 from speech_vr.encoder.NLProcessor import RawNLParser
 from google_speech import Speech, SpeechSegment, PreloaderThread, PRELOADER_THREAD_COUNT
@@ -608,6 +610,9 @@ class SpeechProcessor():
                 self.print_message("User requested termination.")
                 break
             elif 's' in self.keys_pressed:
+                ui = UserInputManager(language=self.LANG)
+                ui.query_state("shit on the string")
+
                 print('detecting robot programs using ontology.')
                 if not self.DEBUG_mode:
                     self.say(self.guidance_file[self.LANG]["start_template"])

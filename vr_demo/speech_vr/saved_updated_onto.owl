@@ -2025,7 +2025,6 @@
   <hasLocation rdf:resource="#point2d4"/>
   <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasId>
   <isInWorkspace rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isInWorkspace>
-  <isLastMentioned rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isLastMentioned>
 </Cube>
 
 <Point2D rdf:about="#point2d4">
@@ -2077,11 +2076,18 @@
   <hasTags rdf:resource="#tag4"/>
   <hasTags rdf:resource="#tag5"/>
   <hasTags rdf:resource="#tag6"/>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polož</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kostka</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">na</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pozici</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasTokens>
+  <hasTags rdf:resource="#tag7"/>
+  <hasTags rdf:resource="#tag8"/>
+  <hasTags rdf:resource="#tag9"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blow</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">points</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">and</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">put</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cube</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</hasTokens>
 </TaggedText>
 
 <Tag rdf:about="#tag1">
@@ -2091,8 +2097,8 @@
 
 <POS rdf:about="#pos1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
 </POS>
 
 <Tag rdf:about="#tag2">
@@ -2102,8 +2108,8 @@
 
 <POS rdf:about="#pos2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particle give up</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RP</hasId>
 </POS>
 
 <Tag rdf:about="#tag3">
@@ -2113,8 +2119,8 @@
 
 <POS rdf:about="#pos3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to go 'to' the store.</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TO</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
 </POS>
 
 <Tag rdf:about="#tag4">
@@ -2124,8 +2130,8 @@
 
 <POS rdf:about="#pos4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adverb very, silently</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RB</hasId>
 </POS>
 
 <Tag rdf:about="#tag5">
@@ -2135,8 +2141,8 @@
 
 <POS rdf:about="#pos5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardinal digit</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coordinating conjunction</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CC</hasId>
 </POS>
 
 <Tag rdf:about="#tag6">
@@ -2145,133 +2151,6 @@
 </Tag>
 
 <POS rdf:about="#pos6">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardinal digit</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD</hasId>
-</POS>
-
-<ParsedText rdf:about="#parsedtext1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasParseTree rdf:resource="#parsetreenode1"/>
-  <hasOrigText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polož kostka na pozici 0 0</hasOrigText>
-</ParsedText>
-
-<ParseTreeNode rdf:about="#parsetreenode1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasSubnodes rdf:resource="#parsetreenode2"/>
-  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</hasLabel>
-</ParseTreeNode>
-
-<ParseTreeNode rdf:about="#parsetreenode2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasSubnodes rdf:resource="#taggedtoken1"/>
-  <hasSubnodes rdf:resource="#taggedtoken2"/>
-  <hasSubnodes rdf:resource="#taggedtoken3"/>
-  <hasSubnodes rdf:resource="#taggedtoken4"/>
-  <hasSubnodes rdf:resource="#taggedtoken5"/>
-  <hasSubnodes rdf:resource="#taggedtoken6"/>
-  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</hasLabel>
-</ParseTreeNode>
-
-<TaggedToken rdf:about="#taggedtoken1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag1"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polož</hasToken>
-</TaggedToken>
-
-<TaggedToken rdf:about="#taggedtoken2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag2"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kostka</hasToken>
-</TaggedToken>
-
-<TaggedToken rdf:about="#taggedtoken3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag3"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">na</hasToken>
-</TaggedToken>
-
-<TaggedToken rdf:about="#taggedtoken4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag4"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pozici</hasToken>
-</TaggedToken>
-
-<TaggedToken rdf:about="#taggedtoken5">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag5"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasToken>
-</TaggedToken>
-
-<TaggedToken rdf:about="#taggedtoken6">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag6"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasToken>
-</TaggedToken>
-
-<TaggedText rdf:about="#taggedtext2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTags rdf:resource="#tag1"/>
-  <hasTags rdf:resource="#tag2"/>
-  <hasTags rdf:resource="#tag3"/>
-  <hasTags rdf:resource="#tag4"/>
-  <hasTags rdf:resource="#tag5"/>
-  <hasTags rdf:resource="#tag6"/>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polož</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kostka</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">na</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pozici</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasTokens>
-</TaggedText>
-
-<TaggedText rdf:about="#taggedtext3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTags rdf:resource="#tag1"/>
-  <hasTags rdf:resource="#tag2"/>
-  <hasTags rdf:resource="#tag3"/>
-  <hasTags rdf:resource="#tag4"/>
-  <hasTags rdf:resource="#tag5"/>
-  <hasTags rdf:resource="#tag6"/>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polož</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kostka</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">na</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pozici</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasTokens>
-</TaggedText>
-
-<RobotProgram rdf:about="#grounded_1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <robotProgramHasRoot rdf:resource="#robotprogramoperator1"/>
-</RobotProgram>
-
-<RobotProgramOperator rdf:about="#robotprogramoperator1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <robotProgramOperatorHasChildren rdf:resource="#robotprogramoperand1"/>
-  <robotProgramOperatorHasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AND</robotProgramOperatorHasType>
-</RobotProgramOperator>
-
-<RobotProgramOperand rdf:about="#robotprogramoperand1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <robotProgramOperandHasParsedText rdf:resource="#parsetreenode2"/>
-  <robotProgramOperandHasTemplate rdf:resource="#puttask1"/>
-</RobotProgramOperand>
-
-<TaggedText rdf:about="#taggedtext4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTags rdf:resource="#tag1"/>
-  <hasTags rdf:resource="#tag2"/>
-  <hasTags rdf:resource="#tag3"/>
-  <hasTags rdf:resource="#tag4"/>
-  <hasTags rdf:resource="#tag5"/>
-  <hasTags rdf:resource="#tag6"/>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polož</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kostka</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">na</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pozici</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasTokens>
-</TaggedText>
-
-<POS rdf:about="#pos7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
   <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
@@ -2282,10 +2161,10 @@
   <hasPos rdf:resource="#pos7"/>
 </Tag>
 
-<POS rdf:about="#pos8">
+<POS rdf:about="#pos7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
 </POS>
 
 <Tag rdf:about="#tag8">
@@ -2293,10 +2172,10 @@
   <hasPos rdf:resource="#pos8"/>
 </Tag>
 
-<POS rdf:about="#pos9">
+<POS rdf:about="#pos8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to go 'to' the store.</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TO</hasId>
 </POS>
 
 <Tag rdf:about="#tag9">
@@ -2304,10 +2183,177 @@
   <hasPos rdf:resource="#pos9"/>
 </Tag>
 
+<POS rdf:about="#pos9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<ParsedText rdf:about="#parsedtext1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasParseTree rdf:resource="#parsetreenode1"/>
+  <hasOrigText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blow up points here and put cube to position</hasOrigText>
+</ParsedText>
+
+<ParseTreeNode rdf:about="#parsetreenode1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasSubnodes rdf:resource="#parsetreenode2"/>
+  <hasSubnodes rdf:resource="#taggedtoken5"/>
+  <hasSubnodes rdf:resource="#parsetreenode3"/>
+  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</hasLabel>
+</ParseTreeNode>
+
+<ParseTreeNode rdf:about="#parsetreenode2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasSubnodes rdf:resource="#taggedtoken1"/>
+  <hasSubnodes rdf:resource="#taggedtoken2"/>
+  <hasSubnodes rdf:resource="#taggedtoken3"/>
+  <hasSubnodes rdf:resource="#taggedtoken4"/>
+  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</hasLabel>
+</ParseTreeNode>
+
+<TaggedToken rdf:about="#taggedtoken1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag1"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blow</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag2"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag3"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">points</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag4"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag5"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">and</hasToken>
+</TaggedToken>
+
+<ParseTreeNode rdf:about="#parsetreenode3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasSubnodes rdf:resource="#taggedtoken6"/>
+  <hasSubnodes rdf:resource="#taggedtoken7"/>
+  <hasSubnodes rdf:resource="#taggedtoken8"/>
+  <hasSubnodes rdf:resource="#taggedtoken9"/>
+  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</hasLabel>
+</ParseTreeNode>
+
+<TaggedToken rdf:about="#taggedtoken6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag6"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">put</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag7"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cube</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag8"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag9"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</hasToken>
+</TaggedToken>
+
+<TaggedText rdf:about="#taggedtext2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag1"/>
+  <hasTags rdf:resource="#tag2"/>
+  <hasTags rdf:resource="#tag3"/>
+  <hasTags rdf:resource="#tag4"/>
+  <hasTags rdf:resource="#tag5"/>
+  <hasTags rdf:resource="#tag6"/>
+  <hasTags rdf:resource="#tag7"/>
+  <hasTags rdf:resource="#tag8"/>
+  <hasTags rdf:resource="#tag9"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blow</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">points</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">and</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">put</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cube</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</hasTokens>
+</TaggedText>
+
+<TaggedText rdf:about="#taggedtext3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag1"/>
+  <hasTags rdf:resource="#tag2"/>
+  <hasTags rdf:resource="#tag3"/>
+  <hasTags rdf:resource="#tag4"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blow</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">points</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasTokens>
+</TaggedText>
+
+<TaggedText rdf:about="#taggedtext4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag6"/>
+  <hasTags rdf:resource="#tag7"/>
+  <hasTags rdf:resource="#tag8"/>
+  <hasTags rdf:resource="#tag9"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">put</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cube</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</hasTokens>
+</TaggedText>
+
+<RobotProgram rdf:about="#grounded_1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramHasRoot rdf:resource="#robotprogramoperator1"/>
+</RobotProgram>
+
+<RobotProgramOperator rdf:about="#robotprogramoperator1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramOperatorHasChildren rdf:resource="#robotprogramoperand1"/>
+  <robotProgramOperatorHasChildren rdf:resource="#robotprogramoperand2"/>
+  <robotProgramOperatorHasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AND</robotProgramOperatorHasType>
+</RobotProgramOperator>
+
+<RobotProgramOperand rdf:about="#robotprogramoperand1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramOperandHasParsedText rdf:resource="#parsetreenode2"/>
+</RobotProgramOperand>
+
+<TaggedText rdf:about="#taggedtext5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag1"/>
+  <hasTags rdf:resource="#tag2"/>
+  <hasTags rdf:resource="#tag3"/>
+  <hasTags rdf:resource="#tag4"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blow</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">points</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasTokens>
+</TaggedText>
+
 <POS rdf:about="#pos10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
 </POS>
 
 <Tag rdf:about="#tag10">
@@ -2317,8 +2363,8 @@
 
 <POS rdf:about="#pos11">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proper noun, singular 'Harrison'</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNP</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
 </POS>
 
 <Tag rdf:about="#tag11">
@@ -2326,36 +2372,10 @@
   <hasPos rdf:resource="#pos11"/>
 </Tag>
 
-<PutTask rdf:about="#puttask1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <object_to_put rdf:resource="#cube1"/>
-  <location rdf:resource="#location1"/>
-  <hasParameters rdf:datatype="http://www.w3.org/2001/XMLSchema#string">object_to_put</hasParameters>
-  <hasParameters rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</hasParameters>
-</PutTask>
-
-<owl:ObjectProperty rdf:about="#object_to_put">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  <rdfs:domain rdf:resource="#PutTask"/>
-  <rdfs:range rdf:resource="#Object"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#location">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  <rdfs:domain rdf:resource="#PutTask"/>
-  <rdfs:range rdf:resource="#Location"/>
-</owl:ObjectProperty>
-
-<TaggedToken rdf:about="#taggedtoken7">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag1"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polož</hasToken>
-</TaggedToken>
-
 <POS rdf:about="#pos12">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
 </POS>
 
 <Tag rdf:about="#tag12">
@@ -2363,16 +2383,10 @@
   <hasPos rdf:resource="#pos12"/>
 </Tag>
 
-<TaggedToken rdf:about="#taggedtoken8">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag2"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kostka</hasToken>
-</TaggedToken>
-
 <POS rdf:about="#pos13">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
 </POS>
 
 <Tag rdf:about="#tag13">
@@ -2380,16 +2394,10 @@
   <hasPos rdf:resource="#pos13"/>
 </Tag>
 
-<TaggedToken rdf:about="#taggedtoken9">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag3"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">na</hasToken>
-</TaggedToken>
-
 <POS rdf:about="#pos14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proper noun, singular 'Harrison'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNP</hasId>
 </POS>
 
 <Tag rdf:about="#tag14">
@@ -2397,16 +2405,27 @@
   <hasPos rdf:resource="#pos14"/>
 </Tag>
 
-<TaggedToken rdf:about="#taggedtoken10">
+<RobotProgramOperand rdf:about="#robotprogramoperand2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag4"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pozici</hasToken>
-</TaggedToken>
+  <robotProgramOperandHasParsedText rdf:resource="#parsetreenode3"/>
+</RobotProgramOperand>
+
+<TaggedText rdf:about="#taggedtext6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag6"/>
+  <hasTags rdf:resource="#tag7"/>
+  <hasTags rdf:resource="#tag8"/>
+  <hasTags rdf:resource="#tag9"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">put</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cube</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</hasTokens>
+</TaggedText>
 
 <POS rdf:about="#pos15">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
 </POS>
 
 <Tag rdf:about="#tag15">
@@ -2414,16 +2433,10 @@
   <hasPos rdf:resource="#pos15"/>
 </Tag>
 
-<TaggedToken rdf:about="#taggedtoken11">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag5"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasToken>
-</TaggedToken>
-
 <POS rdf:about="#pos16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardinal digit</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
 </POS>
 
 <Tag rdf:about="#tag16">
@@ -2431,16 +2444,10 @@
   <hasPos rdf:resource="#pos16"/>
 </Tag>
 
-<TaggedToken rdf:about="#taggedtoken12">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTag rdf:resource="#tag6"/>
-  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasToken>
-</TaggedToken>
-
 <POS rdf:about="#pos17">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardinal digit</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
 </POS>
 
 <Tag rdf:about="#tag17">
@@ -2448,26 +2455,10 @@
   <hasPos rdf:resource="#pos17"/>
 </Tag>
 
-<Location rdf:about="#location1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</x>
-  <y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</y>
-</Location>
-
-<TaggedText rdf:about="#taggedtext5">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasTags rdf:resource="#tag3"/>
-  <hasTags rdf:resource="#tag2"/>
-  <hasTags rdf:resource="#tag4"/>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pozici</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kostka</hasTokens>
-  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">na</hasTokens>
-</TaggedText>
-
 <POS rdf:about="#pos18">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
 </POS>
 
 <Tag rdf:about="#tag18">
@@ -2477,8 +2468,8 @@
 
 <POS rdf:about="#pos19">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, past tense took</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VBD</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proper noun, singular 'Harrison'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNP</hasId>
 </POS>
 
 <Tag rdf:about="#tag19">
@@ -2486,10 +2477,36 @@
   <hasPos rdf:resource="#pos19"/>
 </Tag>
 
+<PutTask rdf:about="#puttask1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <object_to_put rdf:resource="#objectplaceholder1"/>
+  <hasParameters rdf:datatype="http://www.w3.org/2001/XMLSchema#string">object_to_put</hasParameters>
+  <hasParameters rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</hasParameters>
+</PutTask>
+
+<owl:ObjectProperty rdf:about="#object_to_put">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#PutTask"/>
+  <rdfs:domain rdf:resource="#TidyTask"/>
+  <rdfs:range rdf:resource="#Object"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#location">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#PutTask"/>
+  <rdfs:range rdf:resource="#Location"/>
+</owl:ObjectProperty>
+
+<TaggedToken rdf:about="#taggedtoken10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag6"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">put</hasToken>
+</TaggedToken>
+
 <POS rdf:about="#pos20">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
 </POS>
 
 <Tag rdf:about="#tag20">
@@ -2497,16 +2514,28 @@
   <hasPos rdf:resource="#pos20"/>
 </Tag>
 
+<TaggedToken rdf:about="#taggedtoken11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag7"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cube</hasToken>
+</TaggedToken>
+
 <POS rdf:about="#pos21">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
 </POS>
 
 <Tag rdf:about="#tag21">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasPos rdf:resource="#pos21"/>
 </Tag>
+
+<TaggedToken rdf:about="#taggedtoken12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag8"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to</hasToken>
+</TaggedToken>
 
 <POS rdf:about="#pos22">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -2519,10 +2548,16 @@
   <hasPos rdf:resource="#pos22"/>
 </Tag>
 
+<TaggedToken rdf:about="#taggedtoken13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag9"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</hasToken>
+</TaggedToken>
+
 <POS rdf:about="#pos23">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, past tense took</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VBD</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
 </POS>
 
 <Tag rdf:about="#tag23">
@@ -2530,10 +2565,20 @@
   <hasPos rdf:resource="#pos23"/>
 </Tag>
 
+<TaggedText rdf:about="#taggedtext7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag9"/>
+  <hasTags rdf:resource="#tag8"/>
+  <hasTags rdf:resource="#tag7"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cube</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">position</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to</hasTokens>
+</TaggedText>
+
 <POS rdf:about="#pos24">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
 </POS>
 
 <Tag rdf:about="#tag24">
@@ -2541,14 +2586,716 @@
   <hasPos rdf:resource="#pos24"/>
 </Tag>
 
+<POS rdf:about="#pos25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, past tense took</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VBD</hasId>
+</POS>
+
+<Tag rdf:about="#tag25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos25"/>
+</Tag>
+
+<POS rdf:about="#pos26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos26"/>
+</Tag>
+
+<POS rdf:about="#pos27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
+</POS>
+
+<Tag rdf:about="#tag27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos27"/>
+</Tag>
+
+<POS rdf:about="#pos28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<Tag rdf:about="#tag28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos28"/>
+</Tag>
+
 <ObjectPlaceholder rdf:about="#objectplaceholder1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#Cube"/>
 </ObjectPlaceholder>
 
-<TaggedText rdf:about="#taggedtext6">
+<TaggedText rdf:about="#taggedtext8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </TaggedText>
+
+<TaggedText rdf:about="#taggedtext9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag29"/>
+  <hasTags rdf:resource="#tag30"/>
+  <hasTags rdf:resource="#tag31"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tidy</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opera</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tube</hasTokens>
+</TaggedText>
+
+<Tag rdf:about="#tag29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos29"/>
+</Tag>
+
+<POS rdf:about="#pos29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<Tag rdf:about="#tag30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos30"/>
+</Tag>
+
+<POS rdf:about="#pos30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<Tag rdf:about="#tag31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos31"/>
+</Tag>
+
+<POS rdf:about="#pos31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<ParsedText rdf:about="#parsedtext2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasParseTree rdf:resource="#parsetreenode4"/>
+  <hasOrigText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tidy opera tube</hasOrigText>
+</ParsedText>
+
+<ParseTreeNode rdf:about="#parsetreenode4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasSubnodes rdf:resource="#parsetreenode5"/>
+  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</hasLabel>
+</ParseTreeNode>
+
+<ParseTreeNode rdf:about="#parsetreenode5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasSubnodes rdf:resource="#taggedtoken14"/>
+  <hasSubnodes rdf:resource="#taggedtoken15"/>
+  <hasSubnodes rdf:resource="#taggedtoken16"/>
+  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</hasLabel>
+</ParseTreeNode>
+
+<TaggedToken rdf:about="#taggedtoken14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag29"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tidy</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag30"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opera</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag31"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tube</hasToken>
+</TaggedToken>
+
+<TaggedText rdf:about="#taggedtext10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag29"/>
+  <hasTags rdf:resource="#tag30"/>
+  <hasTags rdf:resource="#tag31"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tidy</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opera</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tube</hasTokens>
+</TaggedText>
+
+<TaggedText rdf:about="#taggedtext11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag29"/>
+  <hasTags rdf:resource="#tag30"/>
+  <hasTags rdf:resource="#tag31"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tidy</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opera</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tube</hasTokens>
+</TaggedText>
+
+<RobotProgram rdf:about="#grounded_2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramHasRoot rdf:resource="#robotprogramoperator2"/>
+</RobotProgram>
+
+<RobotProgramOperator rdf:about="#robotprogramoperator2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramOperatorHasChildren rdf:resource="#robotprogramoperand3"/>
+  <robotProgramOperatorHasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AND</robotProgramOperatorHasType>
+</RobotProgramOperator>
+
+<RobotProgramOperand rdf:about="#robotprogramoperand3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramOperandHasParsedText rdf:resource="#parsetreenode5"/>
+</RobotProgramOperand>
+
+<TaggedText rdf:about="#taggedtext12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag29"/>
+  <hasTags rdf:resource="#tag30"/>
+  <hasTags rdf:resource="#tag31"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tidy</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opera</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tube</hasTokens>
+</TaggedText>
+
+<POS rdf:about="#pos32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos32"/>
+</Tag>
+
+<POS rdf:about="#pos33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos33"/>
+</Tag>
+
+<POS rdf:about="#pos34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos34"/>
+</Tag>
+
+<POS rdf:about="#pos35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
+</POS>
+
+<Tag rdf:about="#tag35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos35"/>
+</Tag>
+
+<POS rdf:about="#pos36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proper noun, singular 'Harrison'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNP</hasId>
+</POS>
+
+<Tag rdf:about="#tag36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos36"/>
+</Tag>
+
+<TidyTask rdf:about="#tidytask1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasParameters rdf:datatype="http://www.w3.org/2001/XMLSchema#string">object_to_put</hasParameters>
+</TidyTask>
+
+<TaggedText rdf:about="#taggedtext13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag30"/>
+  <hasTags rdf:resource="#tag31"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opera</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tube</hasTokens>
+</TaggedText>
+
+<POS rdf:about="#pos37">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<Tag rdf:about="#tag37">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos37"/>
+</Tag>
+
+<POS rdf:about="#pos38">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, past tense took</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VBD</hasId>
+</POS>
+
+<Tag rdf:about="#tag38">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos38"/>
+</Tag>
+
+<POS rdf:about="#pos39">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag39">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos39"/>
+</Tag>
+
+<POS rdf:about="#pos40">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
+</POS>
+
+<Tag rdf:about="#tag40">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos40"/>
+</Tag>
+
+<POS rdf:about="#pos41">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<Tag rdf:about="#tag41">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos41"/>
+</Tag>
+
+<POS rdf:about="#pos42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, past tense took</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VBD</hasId>
+</POS>
+
+<Tag rdf:about="#tag42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos42"/>
+</Tag>
+
+<POS rdf:about="#pos43">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag43">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos43"/>
+</Tag>
+
+<POS rdf:about="#pos44">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
+</POS>
+
+<Tag rdf:about="#tag44">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos44"/>
+</Tag>
+
+<POS rdf:about="#pos45">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">possessive pronoun my, his, hers</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRP$</hasId>
+</POS>
+
+<Tag rdf:about="#tag45">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos45"/>
+</Tag>
+
+<TaggedText rdf:about="#taggedtext14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag46"/>
+  <hasTags rdf:resource="#tag47"/>
+  <hasTags rdf:resource="#tag48"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polish</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cost</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">percent</hasTokens>
+</TaggedText>
+
+<Tag rdf:about="#tag46">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos46"/>
+</Tag>
+
+<POS rdf:about="#pos46">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adjective 'big'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JJ</hasId>
+</POS>
+
+<Tag rdf:about="#tag47">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos47"/>
+</Tag>
+
+<POS rdf:about="#pos47">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<Tag rdf:about="#tag48">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos48"/>
+</Tag>
+
+<POS rdf:about="#pos48">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<ParsedText rdf:about="#parsedtext3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasParseTree rdf:resource="#parsetreenode6"/>
+  <hasOrigText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polish cost percent</hasOrigText>
+</ParsedText>
+
+<ParseTreeNode rdf:about="#parsetreenode6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasSubnodes rdf:resource="#parsetreenode7"/>
+  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</hasLabel>
+</ParseTreeNode>
+
+<ParseTreeNode rdf:about="#parsetreenode7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasSubnodes rdf:resource="#taggedtoken17"/>
+  <hasSubnodes rdf:resource="#taggedtoken18"/>
+  <hasSubnodes rdf:resource="#taggedtoken19"/>
+  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</hasLabel>
+</ParseTreeNode>
+
+<TaggedToken rdf:about="#taggedtoken17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag46"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polish</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag47"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cost</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag48"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">percent</hasToken>
+</TaggedToken>
+
+<TaggedText rdf:about="#taggedtext15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag46"/>
+  <hasTags rdf:resource="#tag47"/>
+  <hasTags rdf:resource="#tag48"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polish</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cost</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">percent</hasTokens>
+</TaggedText>
+
+<TaggedText rdf:about="#taggedtext16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag46"/>
+  <hasTags rdf:resource="#tag47"/>
+  <hasTags rdf:resource="#tag48"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polish</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cost</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">percent</hasTokens>
+</TaggedText>
+
+<RobotProgram rdf:about="#grounded_3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramHasRoot rdf:resource="#robotprogramoperator3"/>
+</RobotProgram>
+
+<RobotProgramOperator rdf:about="#robotprogramoperator3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramOperatorHasChildren rdf:resource="#robotprogramoperand4"/>
+  <robotProgramOperatorHasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AND</robotProgramOperatorHasType>
+</RobotProgramOperator>
+
+<RobotProgramOperand rdf:about="#robotprogramoperand4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramOperandHasParsedText rdf:resource="#parsetreenode7"/>
+</RobotProgramOperand>
+
+<TaggedText rdf:about="#taggedtext17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag46"/>
+  <hasTags rdf:resource="#tag47"/>
+  <hasTags rdf:resource="#tag48"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polish</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cost</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">percent</hasTokens>
+</TaggedText>
+
+<POS rdf:about="#pos49">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag49">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos49"/>
+</Tag>
+
+<POS rdf:about="#pos50">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag50">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos50"/>
+</Tag>
+
+<POS rdf:about="#pos51">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag51">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos51"/>
+</Tag>
+
+<POS rdf:about="#pos52">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
+</POS>
+
+<Tag rdf:about="#tag52">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos52"/>
+</Tag>
+
+<POS rdf:about="#pos53">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proper noun, singular 'Harrison'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNP</hasId>
+</POS>
+
+<Tag rdf:about="#tag53">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos53"/>
+</Tag>
+
+<TaggedText rdf:about="#taggedtext18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag54"/>
+  <hasTags rdf:resource="#tag55"/>
+  <hasTags rdf:resource="#tag56"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasTokens>
+</TaggedText>
+
+<Tag rdf:about="#tag54">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos54"/>
+</Tag>
+
+<POS rdf:about="#pos54">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adjective 'big'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JJ</hasId>
+</POS>
+
+<Tag rdf:about="#tag55">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos55"/>
+</Tag>
+
+<POS rdf:about="#pos55">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun, singular 'desk'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NN</hasId>
+</POS>
+
+<Tag rdf:about="#tag56">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos56"/>
+</Tag>
+
+<POS rdf:about="#pos56">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adverb very, silently</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RB</hasId>
+</POS>
+
+<ParsedText rdf:about="#parsedtext4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasParseTree rdf:resource="#parsetreenode8"/>
+  <hasOrigText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue point here</hasOrigText>
+</ParsedText>
+
+<ParseTreeNode rdf:about="#parsetreenode8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasSubnodes rdf:resource="#parsetreenode9"/>
+  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</hasLabel>
+</ParseTreeNode>
+
+<ParseTreeNode rdf:about="#parsetreenode9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasSubnodes rdf:resource="#taggedtoken20"/>
+  <hasSubnodes rdf:resource="#taggedtoken21"/>
+  <hasSubnodes rdf:resource="#taggedtoken22"/>
+  <hasLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</hasLabel>
+</ParseTreeNode>
+
+<TaggedToken rdf:about="#taggedtoken20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag54"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag55"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point</hasToken>
+</TaggedToken>
+
+<TaggedToken rdf:about="#taggedtoken22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTag rdf:resource="#tag56"/>
+  <hasToken rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasToken>
+</TaggedToken>
+
+<TaggedText rdf:about="#taggedtext19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag54"/>
+  <hasTags rdf:resource="#tag55"/>
+  <hasTags rdf:resource="#tag56"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasTokens>
+</TaggedText>
+
+<TaggedText rdf:about="#taggedtext20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag54"/>
+  <hasTags rdf:resource="#tag55"/>
+  <hasTags rdf:resource="#tag56"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasTokens>
+</TaggedText>
+
+<RobotProgram rdf:about="#grounded_4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramHasRoot rdf:resource="#robotprogramoperator4"/>
+</RobotProgram>
+
+<RobotProgramOperator rdf:about="#robotprogramoperator4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramOperatorHasChildren rdf:resource="#robotprogramoperand5"/>
+  <robotProgramOperatorHasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AND</robotProgramOperatorHasType>
+</RobotProgramOperator>
+
+<RobotProgramOperand rdf:about="#robotprogramoperand5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <robotProgramOperandHasParsedText rdf:resource="#parsetreenode9"/>
+</RobotProgramOperand>
+
+<TaggedText rdf:about="#taggedtext21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasTags rdf:resource="#tag54"/>
+  <hasTags rdf:resource="#tag55"/>
+  <hasTags rdf:resource="#tag56"/>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point</hasTokens>
+  <hasTokens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here</hasTokens>
+</TaggedText>
+
+<POS rdf:about="#pos57">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag57">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos57"/>
+</Tag>
+
+<POS rdf:about="#pos58">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag58">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos58"/>
+</Tag>
+
+<POS rdf:about="#pos59">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verb, base form take</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VB</hasId>
+</POS>
+
+<Tag rdf:about="#tag59">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos59"/>
+</Tag>
+
+<POS rdf:about="#pos60">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noun plural 'desks'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNS</hasId>
+</POS>
+
+<Tag rdf:about="#tag60">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos60"/>
+</Tag>
+
+<POS rdf:about="#pos61">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proper noun, singular 'Harrison'</hasDescription>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NNP</hasId>
+</POS>
+
+<Tag rdf:about="#tag61">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPos rdf:resource="#pos61"/>
+</Tag>
 
 <rdf:Description>
   <onto:axiom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PathPoint3D SubClassOf PathPoint</onto:axiom>
