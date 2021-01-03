@@ -240,3 +240,26 @@ class UserInputManager(CrowModule):
         with open(templates_file, "r", encoding="utf-8") as f:
             self.templ_det = json.load(f)
         return self.templ_det
+
+    def query_state(self, state_description, query_type="Inform", query_variants=[], mode="Silent"):
+        """
+         Enables interaction with the system in different modes - Select, Inform and Yes_or_no
+         Might be used in different modes:full, silent, display on screen, only state_description
+
+        Parameters
+        ----------
+        state_description   describes state in which we are e.g. "connecting legs"
+        query_type  type of the query: Select, Yes_or_no, Inform
+        query_variants  variants from which we can select in this state {"bear", "horse", "frog"}
+                        might be empty for yes_or_no and Inform
+        mode    mode how the information is displayed -
+                Silent (only in Console),
+                Full - whole text said
+                Only state description - said only state description
+                """
+        if query_type == "Select":
+            self.say(self.guidance_file[self.lang]["state_description"] +  state_description, "You might select:", query_variants)
+        elif query_type == "Inform":
+            self.say(self.guidance_file[self.lang]["state_description"] +  state_description, say = (mode != 'Silent'))
+        selected_variant = None
+        return selected_variant
