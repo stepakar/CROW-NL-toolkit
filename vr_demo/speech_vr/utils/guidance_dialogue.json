@@ -12,7 +12,11 @@
       "in_workspace": " in the workspace.",
       "default_option": "selecting default option zero. Change to user input.",
       "debug_text": "Processing input text: ",
-      "state_description": "We are currently in the state "
+      "state_description": "We are currently in the state ",
+      "do_you_want": "Do you want to ",
+      "yes_or_no": "Yes or no?",
+      "selection_choices": "Options are ",
+      "select_query": "Which option do you want?"
       },
 "cs":{"start_template":"Rozhodli jste se specifikovat program dle šablon v ontologii.",
       "start_specify": "Prosím, specifikujte svůj požadavek!",
@@ -27,6 +31,10 @@
       "in_workspace": " na pracovišti.",
       "default_option": "Vybrána automatická volba nula. Změň na volbu uživatele.",
       "debug_text": "Zpracovávám zadaný text:",
-      "state_description": "Nyní jsme ve stavu "
+      "state_description": "Nyní jsme ve stavu ",
+      "do_you_want": "Chcete",
+      "yes_or_no": "Ano nebo ne?",
+      "selection_choices": "Možnosti výběru jsou ",
+      "select_query": "Jakou možnost si přejete?"
 }
       }

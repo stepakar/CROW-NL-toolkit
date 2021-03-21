@@ -21,6 +21,8 @@ from pprint import pprint as pp
 import logging
 import gtts
 from playsound import playsound
+import speech_recognition as sr
+
 
 
 def repeat(message="", count=5):
@@ -62,6 +64,7 @@ class UserInputManager(CrowModule):
         self.lang = language
         self.templ_det = self.load_file('templates_detection.json')
         self.guidance_file = self.load_file('guidance_dialogue.json')
+        self.synonyms = self.load_file('synonyms.json')
 
     def ask_to_select_from_class_objects(self, objs : List[Any]) -> Any:
         """
@@ -241,6 +244,31 @@ class UserInputManager(CrowModule):
             self.templ_det = json.load(f)
         return self.templ_det
 
+    def listen(self):
+        try:
+            with sr.Microphone(device_index=self.microphone_index) as source:
+                print("You may say Something")
+                self.play_sound("start_speech")
+
+                # self.play_message("Řekněte, jakou možnost si přejete ..")
+                # listens for the user's input
+                audio = self.recognizer.listen(source, timeout=self.LISTENING_START_TIMEOUT, phrase_time_limit=self.PHRASE_TIMEOUT)
+
+            self.play_sound("end_speech")
+            print("speech heard, processing...")
+            # for testing purposes, we're just using the default API key
+            # to use another API key, use `self.recognizer.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
+            # speech recognition
+            recog_text_original += self.recognizer.recognize_google(audio, language=self.LANG)
+            # recog_text_original = 'velky velikost'
+        except sr.UnknownValueError:
+            self.play_message(self.create_response("did_not_understand", locals()), block=True)
+        except sr.WaitTimeoutError:
+            self.print_message(self.create_response("no_speech", locals()))
+        else:
+            self.print_message(self.create_response("speech_recognition_result", locals()))
+            success = True
+
     def query_state(self, state_description, query_type="Inform", query_variants=[], mode="Silent"):
         """
          Enables interaction with the system in different modes - Select, Inform and Yes_or_no
@@ -257,9 +285,23 @@ class UserInputManager(CrowModule):
                 Full - whole text said
                 Only state description - said only state description
                 """
+        selected_variant = None
+
+        query_string = ""
+        for i in range(0, len(query_variants)):
+            if i > 0 and i == (len(query_variants) - 1):
+                query_string = query_string + " " + self.synonyms[self.lang]["or"][0] + " " + query_variants[i] + "."
+            elif i > 0:
+                query_string = query_string + ", " + query_variants[i]
+            else:
+                query_string = query_string + query_variants[i]
+
         if query_type == "Select":
-            self.say(self.guidance_file[self.lang]["state_description"] +  state_description, "You might select:", query_variants)
+            #creating statement for the user
+            self.say(self.guidance_file[self.lang]["state_description"] +  state_description + ". " + self.guidance_file[self.lang]["selection_choices"] + query_string   , say = (mode != 'Silent'))
+            self.say(self.guidance_file[self.lang]["select_query"], say = (mode != 'Silent'))
+        elif query_type == "Yes_or_no":
+            self.say(self.guidance_file[self.lang]["state_description"] + state_description + ". "+ self.guidance_file[self.lang]["do_you_want"] + " " + query_string + "? " + self.guidance_file[self.lang]["yes_or_no"], say=(mode != 'Silent'))
         elif query_type == "Inform":
             self.say(self.guidance_file[self.lang]["state_description"] +  state_description, say = (mode != 'Silent'))
-        selected_variant = None
         return selected_variant

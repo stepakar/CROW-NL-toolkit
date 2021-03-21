@@ -1,5 +1,6 @@
 {
-"en":{"glue":["lower"],
+"en":{"or": ["or"],
+      "glue":["lower"],
       "paper":["sandpaper"],
       "crosspiece":["crossbar", "cross bar", "cross please","cross piece","cross fit", "cross keys"],
       "ski":["slide","skis","slight","light"],
@@ -37,7 +38,8 @@
       "NO_option": ["no", "do not","don't","not"],
       "YES_option": ["yes", "can", "sure", "of course","pass","give"],
       "CHOICE_option":  ["select","selection","choice","choose","option","options","variants","variant"]},
-"cs":{" todelete ":["ten", "ta", "to", "tou", "pouze", "jenom", "toho", "tím","tedy", "teda", "té", "těmi", "aby", "svůj", "svá", "svojí", "svou", "svoje", "svýma", "svými", "takže", "no", "vlastně", "jakoby", "to znamená", "že", "asi",
+"cs":{"or": ["nebo"],
+      " todelete ":["ten", "ta", "to", "tou", "pouze", "jenom", "toho", "tím","tedy", "teda", "té", "těmi", "aby", "svůj", "svá", "svojí", "svou", "svoje", "svýma", "svými", "takže", "no", "vlastně", "jakoby", "to znamená", "že", "asi",
 "protože", "nějaký", "nějakej", "nějakým", "nějakou", "nějak", "nějaká", "nějaké", "nějakými", "dobře", "možná", "všechny", "všechna", "všecky", "potřebovat", "potřebuje"],
       "maly":["malého", "malé", "malej", "malý", "malýho", "málo","malá","malinká","malinký","malinkého","malinkej","malinkou","malou","Mali"],
       "velky":["velkého","velký","velkej","velkýho","velká","veliká", "velikej","vélikej", "velko","velkou"],
